@@ -35,4 +35,4 @@ This Year
 California Song
 [Second Encore]
 The Sign
-The Best Ever Death Metal Band in Denton 
+The Best Ever Death Metal Band In Denton
