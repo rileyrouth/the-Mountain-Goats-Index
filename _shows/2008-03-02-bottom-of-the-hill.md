@@ -11,7 +11,6 @@ band:
   - Peter Hughes
   - Jon Wurster
 ---
-Intro
 Michael Myers Resplendent
 Heretic Pride
 You Or Your Memory
