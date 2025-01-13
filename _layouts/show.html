@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<h1 class="show-title">{{ page.date | date: "%d %B %Y" }}, {{ page.city }}</h1>
+{% assign setlist = content | strip_html | strip | newline_to_br | split: '<br />'  %}
+
+<div class="grid">
+    <div>
+        <h2>Setlist</h2>
+        <ol class="set">
+            {% for song in setlist %}
+            {% if song contains "[" %}
+            {% assign set_section = song | remove: "[" | remove: "]" %}
+            <p class="label">{{ set_section }}</p>
+            {% else %}
+            <li><a href="/songs/{{ song | slugify }}">{{ song }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
+    <div class="about">
+        <h2>About This Show</h2>
+        {% if page.venue %}
+        <p class="label">Venue</p><p> {{ page.venue }}</p>
+        {% endif %}
+        {% if page.tour %}
+        <p class="label">Tour</p><p> {{ page.tour }}</p>
+        {% endif %}
+        {% if page.listen.size > 1 %}
+            <p class="label">Listen: </p>
+            <ul>
+                {% for tape in page.listen %}
+                    <li><a href="{{ tape.url }}">{{ tape.site }}</a> (taped by {{tape.taper}})</li>
+                {% endfor %}            
+            </ul>
+            {% else if page.listen.size == 1%}
+                {% for tape in page.listen %}
+                    <p class="label">Listen</p><p> <a href="{{ tape.url }}">{{ tape.site }}</a> (taped by {{tape.taper}})</p>
+                {% endfor %}
+            {% endif %}
+        {% if page.band %}
+        <p class="label">The Mountain Goats Are</p>
+        <ul class="band-members">
+            {% for member in page.band %}
+                <li>{{ member }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% if page.banter %}
+        <h2>Stage Banter</h2>
+        {% for quote in page.banter %}
+        <p>{{ quote.quote }}</p>
+        <p>&mdash; {{ quote.song }}</p>
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>

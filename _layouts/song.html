@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<div class="grid">
+    <div>
+        <h2>Lyrics</h2>
+        {% if page.collection == 'songs' %}
+            {{ content }}
+            {% else %}
+            <p>Lyrics coming soon!</p>
+        {% endif %}
+    </div>
+    <div>
+        <h2>About This Song</h2>
+        <p class="label">Album</p>
+        {% for record in site.records %}
+            {% if record.tracks contains page.title %}
+                <p><a href="{{ record.url }}">{{ record.title }}</a></p>
+                {% assign album = record %}
+            {% endif %}
+            {% unless album %}
+                <p>Unreleased/Unknown</p>
+            {% endunless %}
+        {% endfor %}
+            {% for show in site.shows %}
+                {% if show.content contains page.title %}
+                {% unless appearance_found %}
+                    <h2>Appearances</h2>
+                    <ul>
+                {% endunless %}
+                    <li><a href="{{ show.url }}">{{ show.date | date: "%d %B %Y" }}, {{ show.city }}</a></li>
+                    {% assign appearance_found = true %}
+                {% endif %}
+            {% endfor %}
+            {% if appearance_found %}
+            </ul>
+            {% endif %}
+        {% for show in site.shows %}
+            {% if show.content contains page.title %}
+                {% for banter in show.banter %}
+                    {% if banter.song == page.title %}
+                        {% unless banter_found %}
+                            <h2>Banter</h2>
+                        {% endunless %}
+                        <blockquote>{{ banter.quote }}</blockquote>                        
+                        <p>&mdash; <a href="{{ show.url }}">{{ show.date | date: "%d %B %Y" }}, {{ show.city }}</a></p>
+                        {% assign banter_found = true %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

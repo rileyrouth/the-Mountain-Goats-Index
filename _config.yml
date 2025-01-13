@@ -1,0 +1,44 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+
+collections:
+  shows:
+    output: true
+  records:
+    output: true
+  songs:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "shows"
+    values:
+      layout: "show"
+      permalink: /:collection/:title/
+  - scope:
+      path: ""
+      type: "records"
+    values:
+      layout: "record"  
+      permalink: /:collection/:title/
+  - scope:
+      path: ""
+      type: "songs"
+    values:
+      layout: "song"
+      permalink: /:collection/:title/
+  
+
+plugins:
+  - jekyll-datapage-generator
+
+page_gen-dirs: true
+
+page_gen:
+  - data: songs
+    template: song
+    name: title
+    index_files: true

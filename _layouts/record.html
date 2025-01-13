@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<div class="grid">
+    <div>
+        <h2>Tracks</h2>
+        <ol>
+            {% for track in page.tracks %}
+            <li><a href="/songs/{{ track | slugify }}">{{ track }}</a></li>
+            {% endfor %}
+        </ol>
+    </div>
+    <div>
+        <h2>About This Album</h2>
+    </div>
+</div>
