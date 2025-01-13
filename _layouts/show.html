@@ -13,7 +13,8 @@ layout: default
             {% assign set_section = song | remove: "[" | remove: "]" %}
             <p class="label">{{ set_section }}</p>
             {% else %}
-            <li><a href="/songs/{{ song | slugify }}">{{ song }}</a></li>
+            {% assign slug = song | slugify %}
+            <li><a href="{{ "/songs/" | append: slug | relative_url }}">{{ song }}</a></li>
             {% endif %}
             {% endfor %}
         </ol>

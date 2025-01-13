@@ -4,10 +4,11 @@ layout: default
 <h1>{{ page.title }}</h1>
 <div class="grid">
     <div>
-        <h2>Tracks</h2>
+        <h2>Songs</h2>
         <ol>
-            {% for track in page.tracks %}
-            <li><a href="/songs/{{ track | slugify }}">{{ track }}</a></li>
+            {% for song in page.songs %}
+                {% assign slug = song | slugify %}
+                <li><a href="{{ "/songs/" | append: slug | relative_url }}">{{ song }}</a></li>
             {% endfor %}
         </ol>
     </div>

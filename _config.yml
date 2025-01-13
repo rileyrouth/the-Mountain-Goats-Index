@@ -1,6 +1,6 @@
-url: "https://rileyrouth.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/the-Mountain-Goats-Index" # the subpath of your site, e.g. /blog
-title: "the Mountain Goats Index" # the name of your site, e.g. ACME Corp.
+url: ""
+baseurl: ""
+title: "the Mountain Goats Index"
 
 collections:
   shows:
@@ -17,7 +17,7 @@ defaults:
       type: "shows"
     values:
       layout: "show"
-      permalink: /:collection/:title/
+      permalink: /:collection/:year-:month-:day-:title/
   - scope:
       path: ""
       type: "records"

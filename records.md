@@ -6,5 +6,5 @@ permalink: /records/
 # Records
 
 {% for record in site.records %}
-* [{{ record.title }}]({{ record.url }})
+* [{{ record.title }}]({{ record.url | relative_url }})
 {% endfor %}
