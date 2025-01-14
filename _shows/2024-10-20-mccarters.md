@@ -2,10 +2,6 @@
 date: 2024-10-20
 city: Princeton, NJ
 venue: McCarter Theatre Center
-listen:
-  - url: 
-    site: 
-    taper: 
 band:
   - John Darnielle
   - Matt Douglas
