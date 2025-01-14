@@ -16,7 +16,7 @@ layout: default
         <h2>About This Song</h2>
         <p class="label">Album</p>
         {% for record in site.records %}
-            {% if record.tracks contains page.title %}
+            {% if record.songs contains page.title %}
                 <p><a href="{{ record.url }}">{{ record.title }}</a></p>
                 {% assign album = record %}
             {% endif %}
