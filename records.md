@@ -8,5 +8,5 @@ This is a list of records by the Mountain Goats, including EPs, cassettes, album
 
 {% assign discography = site.records | sort: "year" %}
 {% for record in discography %}
-* [{{ record.title }}]({{ record.url | relative_url }})
+* [{{ record.title }} ({{ record.year }})]({{ record.url | relative_url }})
 {% endfor %}

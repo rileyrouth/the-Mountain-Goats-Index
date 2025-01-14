@@ -3,7 +3,7 @@
 
 $backgroundColor: rgb(218, 231, 243);
 $bodyColor: #000000;
-$keyColor: #3b247c;
+$keyColor: #246a7c;
 $lighterColor: hsl(0, 0%, 30%);
 $bodyFont: "Poppins";
 
@@ -23,6 +23,9 @@ nav {
   justify-content: space-between;
   p, a {
     margin:0;
+    &:hover {
+      text-decoration:none;
+    }
   }
   .nav-links {
     margin-bottom:0;
@@ -37,9 +40,13 @@ nav {
   margin:auto;
 }
 
-.grid {
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
+@media (min-width: 900px) {
+
+  .grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 h1 {
