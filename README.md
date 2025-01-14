@@ -50,7 +50,7 @@ banter:
     song: White Cedar
 ---
 ```
-If any of this front matter isn't relevant (for example, if there's no tape or specific name for the tour), then remove that entire line and any sub-entries.
+If any of this front matter isn't relevant (for example, if there's no tape or specific name for the tour), then remove that entire line and any sub-entries.[^removinglisten]
 
 After the front matter (below the final line of three dashes), add the setlist. Only include songs - don't include intros, banter, or other stuff. You can add sections to the setlist by including square brackets around the section title. See below for an example.
 
@@ -85,3 +85,5 @@ No Children
 I welcome all other contributions, including performance improvements, front-end enhancements, and even features! But please mark these clearly so I can see what's going on - I am still kind of an amateur, so I might need complicated stuff explaining to me before I merge it. But I would still love to see it!
 
 [^conflicts]: This will throw a warning up as Jekyll tries to create two pages with the same name, but seems to be fine as far as I can tell. Welcoming opinions on how best to fix this!
+
+[^removinglisten]: So if there's no tape, you need to remove the lines that start `listen`, `url`, `site`, and `taper`.
