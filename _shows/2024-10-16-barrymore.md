@@ -2,10 +2,6 @@
 date: 2024-10-16
 city: Madison, WI
 venue: Barrymore Theatre
-listen:
-  - url: 
-    site: 
-    taper: 
 band:
   - John Darnielle
   - Matt Douglas
