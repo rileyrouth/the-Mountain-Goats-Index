@@ -10,9 +10,9 @@ The Mountain Goats Index runs with [Jekyll](https://jekyllrb.com) and [Netlify](
 To contribute pages, simply fork the repository and begin adding files. When you've added as much as you want, create a pull request and I'll look over your contributions.
 
 ### Adding Songs
-All songs have a default page created automatically from the list in `_data/songs.yaml`. However, in order for a song to have lyrics and other information, a dedicated page needs to be created in the `_songs` folder.[^conflicts]
+All songs have a default page created automatically from the list in `_data/songs.yaml`. However, in order for a song to have lyrics and other information, a dedicated page needs to be created in the `_songs` folder.[^conflicts] 
 
-A song file should be named after the song, and contain the following front matter:
+A song file should be named after the song with the `.md` extension, and contain the following front matter:
 
 ```
 ---
@@ -27,5 +27,58 @@ You can add annotations to lyrics by including the footnote symbol: `[^footnoten
 ```
 [^lakesidelocation]: No specific suite of apartments exists in the specified area with this name, as far as I can see.
 ```
+
+### Adding Shows
+To add a show, create a file in `_shows` that's named after the date in YYYY-MM-DD format, followed by the venue name, such as `2024-12-10-antones-nightclub.md`. Then, include as much front matter as you can, using this template:
+
+```
+---
+date: 2012-01-31
+city: Charlotte, NC
+venue: Visulite Theatre
+tour: New Hymns for the Advent of the Serpent God Tour
+listen:
+  - url: https://archive.org/details/TMG2012-01-31.aud.flac16
+    site: Internet Archive
+    taper: taperroy
+band:
+  - John Darnielle
+  - Peter Hughes
+  - Jon Wurster
+banter:
+  - quote: "This is a quote I said on stage."
+    song: White Cedar
+---
+```
+If any of this front matter isn't relevant (for example, if there's no tape or specific name for the tour), then remove that entire line and any sub-entries.
+
+After the front matter (below the final line of three dashes), add the setlist. Only include songs - don't include intros, banter, or other stuff. You can add sections to the setlist by including square brackets around the section title. See below for an example.
+
+```
+In Memory of Satan
+See America Right
+Prowl Great Cain
+Song for Lonely Giants
+Birth of Serpents
+Game Shows Touch our Lives
+[Solo]
+Commandante
+The Day the Aliens Came
+You Were Cool
+[Band Returns]
+White Cedar
+Transcendental Youth
+Never Quite Free
+The Diaz Brothers
+Palmcorder Yajna
+International Small Arms Traffic Blues
+Southwood Plantation Road
+[Encore]
+The Best Ever Death Metal Band In Denton
+No Children
+```
+
+### Adding Records
+*Coming soon!*
 
 [^conflicts]: This will throw a warning up as Jekyll tries to create two pages with the same name, but seems to be fine as far as I can tell. Welcoming opinions on how best to fix this!
