@@ -8,7 +8,7 @@ band:
     - Jon Wurster
 songs:
     - Amy AKA Spent Gladiator 1
-    - Lakeside View Apartments Suite
+    - Lakeside View Apartment Suite
     - Cry for Judas
     - Harlem Roulette
     - White Cedar
