@@ -26,7 +26,7 @@ Woke Up New
 Song For My Stepfather
 [John & Jon]
 Ezekiel 7 and the Permanent Efficacy Of Grace
-[Band Returns]
+[Full Band]
 The Diaz Brothers
 In Memory of Satan
 Cry For Judas
