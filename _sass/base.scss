@@ -3,7 +3,7 @@
 
 $backgroundColor: rgb(218, 231, 243);
 $bodyColor: #000000;
-$keyColor: blue;
+$keyColor: #3b247c;
 $lighterColor: hsl(0, 0%, 30%);
 $bodyFont: "Poppins";
 
@@ -58,6 +58,8 @@ a {
   text-decoration:none;
   &:hover {
     color:$keyColor;
+    text-decoration:underline;
+    text-decoration-style:dotted;
   }
 }
 

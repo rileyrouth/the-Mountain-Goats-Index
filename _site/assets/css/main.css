@@ -125,7 +125,9 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: blue;
+  color: #3b247c;
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 p, ul, ol {
