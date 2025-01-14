@@ -22,7 +22,7 @@ songs:
     - Snow Crush Killing Song
     - Send Me an Angel
     - Neon Orange Glimmer Song
-    - FM" (Steely Dan
+    - FM
     - Prana Ferox
     - Cold Milk Bottle
 ---
