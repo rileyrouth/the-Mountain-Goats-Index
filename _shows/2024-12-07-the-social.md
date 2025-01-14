@@ -2,10 +2,6 @@
 date: 2024-12-07 
 city: Orlando, FL
 venue: The Social
-listen:
-  - url: 
-    site: 
-    taper: 
 band:
   - John Darnielle
   - Matt Douglas
