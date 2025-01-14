@@ -1,5 +1,5 @@
 ---
-title: Transmissions to horace
+title: Transmissions to Horace
 label: Sonic Enemy
 year: 1993
 band:
