@@ -10,6 +10,9 @@ band:
   - John Darnielle
   - Peter Hughes
   - Jon Wurster
+banter:
+  - quote: "This song is about your sexuality. It's about how, if you find yourself alone, and desperate, and frightened, and literally yearning for death all of the time, but you find someone to sleep with, that [audience laughter] — I know, see, so people laugh, but those hours that you can spend in a place where your body feels like an okay thing to you and not your enemy, are the greatest hours that we're ever going to get."
+    song: Transcendental Youth
 ---
 White Cedar
 Amy aka Spent Gladiator 1
