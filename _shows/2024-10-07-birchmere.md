@@ -2,10 +2,6 @@
 date: 2024-10-07
 city: Alexandria, VA
 venue: The Birchmere
-listen:
-  - url: 
-    site: 
-    taper: 
 band:
   - John Darnielle
   - Matt Douglas
