@@ -4,7 +4,7 @@ This site aims to be a comprehensive list of every song, record, and show ever p
 We are a fan project run by dedicated amateur volunteers, and are not associated with the band in any way. There's lots of work to do, so feel free to contribute entries to the site! See below for a contribution guide.
 
 ## About
-The Mountain Goats Index runs with [Jekyll](https://jekyllrb.com) and [Netlify](https://netlify.com).
+The Mountain Goats Index runs on [Jekyll](https://jekyllrb.com) and [Netlify](https://netlify.com).
 
 ## Contributing
 To contribute pages, simply fork the repository and begin adding files. When you've added as much as you want, create a pull request and I'll look over your contributions.
@@ -80,5 +80,8 @@ No Children
 
 ### Adding Records
 *Coming soon!*
+
+## Other Contributions
+I welcome all other contributions, including performance improvements, front-end enhancements, and even features! But please mark these clearly so I can see what's going on - I am still kind of an amateur, so I might need complicated stuff explaining to me before I merge it. But I would still love to see it!
 
 [^conflicts]: This will throw a warning up as Jekyll tries to create two pages with the same name, but seems to be fine as far as I can tell. Welcoming opinions on how best to fix this!
