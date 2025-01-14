@@ -47,6 +47,12 @@ layout: default
             {% endfor %}
         </ul>
         {% endif %}
+        {% if page.notes %}
+            <h2>Notes</h2>
+            {% for note in page.notes %}
+                <p>{{ note }}</p>
+            {% endfor %}
+        {% endif %}
         {% if page.banter %}
         <h2>Stage Banter</h2>
         {% for quote in page.banter %}
