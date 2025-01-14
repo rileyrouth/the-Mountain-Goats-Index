@@ -2,10 +2,6 @@
 date: 2024-12-05
 city: St. Petersburg, FL
 venue: The Floridian Social
-listen:
-  - url: 
-    site: 
-    taper: 
 band:
   - John Darnielle
   - Matt Douglas
