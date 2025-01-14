@@ -1,11 +1,7 @@
 ---
 date: 2024-11-30
 city: Winston-Salem, NC
-venue: The Ramkat & Gas Hill
-listen:
-  - url: 
-    site: 
-    taper: 
+venue: The Ramkat and Gas Hill
 band:
   - John Darnielle
   - Matt Douglas
