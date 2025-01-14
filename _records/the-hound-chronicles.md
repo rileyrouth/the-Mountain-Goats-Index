@@ -1,6 +1,7 @@
 ---
 title: The Hound Chronicles
 label: Shrimper
+year: 1992
 band:
     - John Darnielle
 songs:

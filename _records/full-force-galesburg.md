@@ -1,6 +1,7 @@
 ---
 title: Full Force Galesburg
 label: Emperor Jones
+year: 1997
 band:
     - John Darnielle
 songs:

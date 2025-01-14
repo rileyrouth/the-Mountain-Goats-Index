@@ -1,6 +1,7 @@
 ---
 title: "Taboo VI: The Homecoming"
 label: Shrimper
+year: 1991
 band:
     - John Darnielle
 songs:

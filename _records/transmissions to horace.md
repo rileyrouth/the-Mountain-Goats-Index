@@ -1,6 +1,7 @@
 ---
 title: Transmissions to horace
 label: Sonic Enemy
+year: 1993
 band:
     - John Darnielle
 songs:
