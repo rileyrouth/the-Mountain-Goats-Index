@@ -29,22 +29,25 @@ nav {
   }
   .nav-links {
     margin-bottom:0;
-    display:flex;
     gap:1rem;
     align-items:center;
+    text-align:right;
   }
 }
 
 .container {
-  width:min(75rem, 100vw - 5rem);
+  width:min(75rem, 100vw - 2rem);
   margin:auto;
 }
 
 @media (min-width: 900px) {
-
+  
   .grid {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-links {
+    display:flex;
   }
 
 }
