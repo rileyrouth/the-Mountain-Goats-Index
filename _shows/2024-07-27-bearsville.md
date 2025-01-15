@@ -2,10 +2,6 @@
 date: 2024-07-27
 city: Woodstock, NY
 venue: Bearsville Theater
-listen:
-  - url: 
-    site: 
-    taper: 
 band:
   - John Darnielle
   - Peter Hughes
